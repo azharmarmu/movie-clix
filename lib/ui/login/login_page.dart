@@ -75,6 +75,7 @@ class _LoginPageState extends State<LoginPage> {
           _passwordTextField(context),
           SizedBox(height: 4 * SizeConfig.heightMultiplier),
           _loginButton(context),
+          SizedBox(height: 4 * SizeConfig.heightMultiplier),
         ],
       ),
     );
