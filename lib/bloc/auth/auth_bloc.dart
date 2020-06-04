@@ -42,7 +42,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
             message: response['message'],
           );
         }
-      } on SocketException {
+      } catch (e) {
         yield AuthLoginFailureState(
           email: event.name,
           password: event.password,
